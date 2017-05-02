@@ -3,7 +3,6 @@ class PhotosController < ApplicationController
   def destroy_row
     p = Photo.find(params[:id])
     p.destroy
-    p.save
     redirect_to("/photos")
   end
 

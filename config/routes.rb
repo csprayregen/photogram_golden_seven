@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get("/photos/:id", {:controller => "photos", :action => "show"})
 
+  get("/", {:controller => "photos", :action => "index"})
+
   # update
   get("/photos/:id/edit", {:controller => "photos", :action => "edit_form"})
 
